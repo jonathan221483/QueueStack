@@ -3,5 +3,4 @@ public class MyArrayListStack {
 
     MyArrayList stack = new MyArrayList();
     MyArrayListStack(){}
-
 }
