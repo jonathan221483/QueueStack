@@ -115,9 +115,7 @@ public class MyArrayList implements MyList {
         for(int i = first; i<=last; i++){
             sub[i - first] = data[i];
         }
-
         Arrays.sort(sub);
-
         return sub;
     }
 
