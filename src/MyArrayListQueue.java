@@ -21,5 +21,7 @@ public class MyArrayListQueue {
         }
         return true;
     }
-
+    public static int size(){
+        return queue.size();
+    }
 }
