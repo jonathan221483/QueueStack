@@ -11,4 +11,15 @@ public class MyLinkedListQueue {
         queue.removeByIndex(0);
         return element;
     }
+    public static Object peek(){
+        return queue.get(0);
+    }
+    public static boolean isEmpty(){
+        for(int i = 0; i< queue.size(); i++){
+            if(queue.get(i)!=null)
+                return false;
+        }
+        return true;
+    }
+
 }
