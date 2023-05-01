@@ -9,12 +9,12 @@ public class MyArrayListStack {
     }
 
     public static Object pop(){
-        Object element = stack.get(stack.size());
-        stack.removeByIndex(stack.size());
+        Object element = stack.get(stack.size()-1);
+        stack.removeByIndex(stack.size()-1);
         return element;
     }
     public static Object peek(){
-        return stack.get(stack.size());
+        return stack.get(stack.size()-1);
     }
 
     public static boolean isEmpty(){
