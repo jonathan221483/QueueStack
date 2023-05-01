@@ -6,4 +6,9 @@ public class MyArrayListQueue {
     public static void enqueue(Object o){
         queue.add(o);
     }
+    public static Object dequeue(Object o){
+        Object element = queue.get(0);
+        queue.removeByIndex(0);
+        return element;
+    }
 }
