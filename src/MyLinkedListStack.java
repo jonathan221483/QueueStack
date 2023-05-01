@@ -1,5 +1,6 @@
+import java.util.EmptyStackException;
 public class MyLinkedListStack {
-    static MyLinkedList stack = new MyLinkedList(); //create an instance of LinkedList
+    private static MyLinkedList stack = new MyLinkedList(); //create an instance of LinkedList
     MyLinkedListStack(){} //constructor for Stack
 
     public static void push(Object o){  //adds new element to stack
@@ -7,8 +8,8 @@ public class MyLinkedListStack {
     }
 
     public static Object pop(){ //returns and deletes the front element of the stack
-        Object element = stack.get(stack.size()-1); //create a buffer variable that will store last element
-        stack.removeByIndex(stack.size()-1); //delete that element
+        Object element = stack.get(stack.size()); //create a buffer variable that will store last element
+        stack.removeByIndex(stack.size()); //delete that element
         return element;
     }
     public static Object peek(){

@@ -6,7 +6,7 @@ public class MyArrayListQueue {
     public static void enqueue(Object o){ //adds new element to the beginning of queue
         queue.add(o);
     }
-    public static Object dequeue(Object o){ //returns and deletes the front element of the queue
+    public static Object dequeue(){ //returns and deletes the front element of the queue
         Object element = queue.get(0); //create a buffer variable that will store front element
         queue.removeByIndex(0); //delete front element
         return element;
