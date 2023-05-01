@@ -11,4 +11,7 @@ public class MyArrayListQueue {
         queue.removeByIndex(0);
         return element;
     }
+    public static Object peek(Object o){
+        return queue.get(0);
+    }
 }
