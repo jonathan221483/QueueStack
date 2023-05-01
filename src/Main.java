@@ -6,8 +6,10 @@ public class Main {
         a.push(3);
         //a.push(6);
         //a.push(9);
+        System.out.println(a.size());
         System.out.println(a.pop());
         System.out.println(a.isEmpty());
+        System.out.println(a.size());
 
         //////////////////////
 

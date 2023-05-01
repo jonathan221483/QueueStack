@@ -25,4 +25,8 @@ public class MyArrayListStack {
         return true;
     }
 
+    public static int size(){
+        return stack.size();
+    }
+
 }
