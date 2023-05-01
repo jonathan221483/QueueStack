@@ -16,4 +16,13 @@ public class MyArrayListStack {
     public static Object peek(){
         return stack.get(stack.size());
     }
+
+    public static boolean isEmpty(){
+        for(int i = 0; i< stack.size(); i++){
+            if(stack.get(i)!=null)
+                return false;
+        }
+        return true;
+    }
+
 }
