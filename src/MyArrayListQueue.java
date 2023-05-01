@@ -14,5 +14,12 @@ public class MyArrayListQueue {
     public static Object peek(){
         return queue.get(0);
     }
+    public static boolean isEmpty(){
+        for(int i = 0; i< queue.size(); i++){
+            if(queue.get(i)!=null)
+                return false;
+        }
+        return true;
+    }
 
 }
