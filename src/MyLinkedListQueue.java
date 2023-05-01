@@ -1,2 +1,14 @@
+import java.util.NoSuchElementException;
 public class MyLinkedListQueue {
+
+    private static MyArrayList queue = new MyArrayList();
+    MyLinkedListQueue(){}
+    public static void enqueue(Object o){
+        queue.add(o);
+    }
+    public static Object dequeue(Object o){
+        Object element = queue.get(0);
+        queue.removeByIndex(0);
+        return element;
+    }
 }

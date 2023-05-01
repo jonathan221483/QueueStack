@@ -3,7 +3,7 @@ public class MyLinkedListStack {
     MyLinkedListStack(){}
 
     public static void push(Object o){
-        stack.add(o,0);
+        stack.add(o);
     }
 
     public static Object pop(){
