@@ -7,4 +7,10 @@ public class MyArrayListStack {
     public static void push(Object o){
         stack.add(o);
     }
+
+    public static Object pop(){
+        Object element = stack.get(stack.size());
+        stack.removeByIndex(stack.size());
+        return element;
+    }
 }
