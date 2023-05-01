@@ -21,5 +21,7 @@ public class MyLinkedListQueue {
         }
         return true;
     }
-
+    public static int size(){
+        return queue.size();
+    }
 }
